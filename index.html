@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Page</title>
+<meta charset="utf-8"/>
+<link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+
+<body>
+<h1>Index</h1>
+
+<p>The blog list will appear below. If you want to add year or month headings, you are expected to do it yourself. You could just as easily have this on your manin index.html. Remember to just change the blog index variable in the <code>lb</code> script to what you index file is.</p>
+
+<ul>
+<!-- TEXT -->
+</ul>
+<div id="demo"></div>
+
+<script>
+let text = "<p>Browser CodeName: " + navigator.appCodeName + "</p>" +
+"<p>Browser Name: " + navigator.appName + "</p>" +
+"<p>Browser Version: " + navigator.appVersion + "</p>" +
+"<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>" +
+"<p>Browser Language: " + navigator.language + "</p>" +
+"<p>Browser Online: " + navigator.onLine + "</p>" +
+"<p>Platform: " + navigator.platform + "</p>" +
+"<p>User-agent header: " + navigator.userAgent + "</p>";
+let platform = navigator.platform;
+
+let browser = navigator.appName;
+let browserCode = navigator.appCodeName;
+let usrlang = navigator.languages;
+let cookie = navigator.cookieEnabled;
+let browserOnline = navigator.onLine;
+
+document.getElementById("demo").innerHTML = 
+`${platform} <br>`+ 
+`${browser} <br>` + 
+`${browserCode} <br>` +
+`${usrlang} <br>`+ 
+`${cookie} <br>`+ 
+`${browserOnline} <br>`
+;
+</script>
+</body>
+</html>

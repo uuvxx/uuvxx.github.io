@@ -1,0 +1,15 @@
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #3a3a3a;
+        color: white;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #d2bb0c;
+        color: black;
+    }
+}
